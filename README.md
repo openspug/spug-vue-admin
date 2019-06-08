@@ -13,11 +13,7 @@
 
 ### Preview 预览
 ----------------------------
-![image](http://image.qbangmang.com/login.gif)
-![image](http://image.qbangmang.com/user.gif)
-![image](http://image.qbangmang.com/host.gif)
-![image](http://image.qbangmang.com/publish.gif)
-![image](http://image.qbangmang.com/tasks.gif)
+![image](http://image.qbangmang.com/spug_vue_admin.png)
 
 
 #### Environment 环境
