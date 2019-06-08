@@ -1,6 +1,6 @@
 /**
  * Created by zyupo on 2019/05/26
- * https://github.com/openspug/spug
+ * https://github.com/openspug
  */
 
 import Notify from './Notify.vue';
