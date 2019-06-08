@@ -4,7 +4,7 @@
 <template>
     <div class="layout-wrapper">
         <div class="layout-side" :class="{'layout-side-extend': !isCollapse}">
-            <div class="layout-logo" v-if="!isCollapse">Spug运维平台</div>
+            <div class="layout-logo" v-if="!isCollapse">Spug</div>
             <div class="layout-logo" v-else>S</div>
             <el-menu :collapse="isCollapse" :default-active="current_index" @select="handleSelect" unique-opened router>
                 <template v-for="item in menus" v-if="has_permission(item.permission)">

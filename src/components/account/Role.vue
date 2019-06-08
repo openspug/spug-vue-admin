@@ -7,11 +7,11 @@
         <el-table :data="tableData" v-loading="tableLoading" style="width: 100%; margin-top: 20px">
             <el-table-column prop="name" label="名称" min-width="100"></el-table-column>
             <el-table-column prop="desc" label="描述" show-overflow-tooltip></el-table-column>
-            <el-table-column label="操作" width="300">
+            <el-table-column label="操作" >
                 <template slot-scope="scope">
                     <el-button v-if="has_permission('account_role_edit')" size="small" @click="editOpen(scope.row)">编辑</el-button>
                     <el-button v-if="has_permission('account_role_permission_view')" size="small" type="primary" @click="perOpen(scope.row)">权限</el-button>
-                    <el-button v-if="has_permission('account_role_permission_view')" size="small" type="primary" @click="pubPerOpen(scope.row)">发布</el-button>
+<!--                    <el-button v-if="has_permission('account_role_permission_view')" size="small" type="primary" @click="pubPerOpen(scope.row)">发布</el-button>-->
                     <el-button v-if="has_permission('account_role_del')" size="small" type="danger" :loading="btnDelLoading[scope.row.id]" @click="delCommit(scope.row)">删除</el-button>
                 </template>
             </el-table-column>
@@ -59,6 +59,7 @@
             fetch() {
                 this.tableLoading = true;
                 this.$http.get('/api/account/roles/').then(res => {
+                    console.log('res', res.result);
                     this.tableData = res.result
                 }, res => this.$layer_message(res.result)).finally(() => this.tableLoading = false)
             },

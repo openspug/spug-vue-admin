@@ -1,8 +1,8 @@
 /**
  * Created by zyupo on 2019/05/26
- * https://github.com/openspug/spug
+ * https://github.com/openspug
  */
- 
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ElementUI from 'element-ui'

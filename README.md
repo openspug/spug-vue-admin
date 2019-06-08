@@ -5,6 +5,7 @@
 
 ##### Demo演示地址：<https://spug.qbangmang.com/login>
 ##### Demo账号密码：<admin/spug>
+#### 模拟接口地址：https://easy-mock.com/
 
 ##### 开源运维平台：https://github.com/openspug/spug
 

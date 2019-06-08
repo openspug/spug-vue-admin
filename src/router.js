@@ -9,10 +9,6 @@ import Welcome from './components/Welcome.vue'
 import Login from './components/Login.vue'
 import Layout from './components/Layout.vue'
 import account_routes from './components/account/routes'
-import publish_routes from './components/publish/routes'
-import configuration_routes from './components/configuration/routes'
-import assets_routes from './components/assets/routes'
-import schedule_routes from './components/schedule/routes'
 import system_routes from './components/system/routes'
 
 const routes = [
@@ -29,22 +25,6 @@ const routes = [
     {
         path: 'account',
         routes: account_routes
-    },
-    {
-        path: 'publish',
-        routes: publish_routes
-    },
-    {
-        path: 'configuration',
-        routes: configuration_routes
-    },
-    {
-        path: 'assets',
-        routes: assets_routes
-    },
-    {
-        path: 'schedule',
-        routes: schedule_routes
     },
     {
         path: 'system',

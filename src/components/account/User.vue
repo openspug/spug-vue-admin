@@ -32,16 +32,16 @@
                     <el-tag type="danger" v-else>禁用</el-tag>
                 </template>
             </el-table-column>
-            <el-table-column v-if="has_permission('account_user_edit|account_user_disable')" label="操作" width="250">
+            <el-table-column v-if="has_permission('account_user_edit|account_user_disable')" label="操作" width="320">
                 <template slot-scope="scope">
-                    <el-button v-if="has_permission('account_user_edit')" size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-                    <el-button v-if="has_permission('account_user_disable') && scope.row.is_active" size="small"
+                    <el-button v-if="has_permission('account_user_edit')" size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                    <el-button v-if="has_permission('account_user_disable') && scope.row.is_active" size="mini"
                                type="danger" :loading="btnDelLoading[scope.row.id]" @click="handleDisable(scope.$index, scope.row)">禁用
                     </el-button>
-                    <el-button  v-if="has_permission('account_user_disable') && scope.row.is_active != 1" size="small"
+                    <el-button  v-if="has_permission('account_user_disable') && scope.row.is_active != 1" size="mini"
                                 type="success" :loading="btnDelLoading[scope.row.id]" @click="handleDisable(scope.$index, scope.row)">启用
                     </el-button>
-                    <el-button v-if="has_permission('account_user_disable')" size="small" type="warning" @click="RestPwd(scope.$index, scope.row)">重置密码
+                    <el-button v-if="has_permission('account_user_disable')" size="mini" type="warning" @click="RestPwd(scope.$index, scope.row)">重置密码
                     </el-button>
                 </template>
             </el-table-column>
@@ -55,7 +55,6 @@
                     :total="tableData.total">
             </el-pagination>
         </div>
-
 
         <!--编辑新增界面-->
         <el-dialog :title="editFormTitle" :visible.sync="dialogShow" :close-on-click-modal="false">

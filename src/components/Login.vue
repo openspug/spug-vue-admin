@@ -3,7 +3,7 @@
         <el-row style="z-index: 1;height: 100%;">
             <el-card class="login-box"  element-loading-background="rgba(0, 0, 0, 0.8)">
                 <el-form ref="form" :model="form" :rules="rules" label-with="80px" @keyup.enter.native="handleSubmit">
-                    <h1 class="title">Spug运维平台</h1>
+                    <h1 class="title">Spug-vue-admin</h1>
                     <!--<p class="login-box-msg">运维平台</p>-->
                     <el-form-item prop="username">
                         <el-input v-model="form.username" :autofocus="true" placeholder="请输入用户">
