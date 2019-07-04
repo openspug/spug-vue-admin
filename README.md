@@ -37,6 +37,9 @@ shell> npm run dev
 # 本地启动后，访问：http://localhost:8080 输入任意账号密码就可以登录。
 
 ```
+#### 文档
+* [配置文档](https://github.com/openspug/spug-vue-admin/wiki)
+
 
 #### Element组件库
 ----------------------------
